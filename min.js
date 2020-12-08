@@ -10,7 +10,7 @@ $("document").ready(function() {
         var y = $("#Incomplete");
         var z = `<input type='checkbox' class='check' id='chk${i}'>`
 
-        console.log('maa')
+
         var y2 = `<input type="text" style="width: 15%;" id="inp${i}"><input type="button" value="Edit" class="edit" id="edt${i}"><input type="button" value="Delete" class="del" id="del${i}">`
         var y1 = y.html() + `<li id=lis${i}>` + z + `<span id="sp${i}">` + x.val() + "</span>" + y2 + "</li>";
         // console.log(y1)
