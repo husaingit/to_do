@@ -53,6 +53,7 @@ $("document").ready(function() {
                 console.log("fv")
                 var app_list = $(`#lis${j}`)
                 app_list.appendTo('#Completed');
+                  $('#Completed ').css("text-decoration", "line-through")
 
             } else {
                 var incomp = $("#Incomplete");
