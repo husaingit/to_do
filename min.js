@@ -3,6 +3,7 @@ var i = 0,
     newed = "";
 $("document").ready(function() {
     $("#add").click(function() {
+
         i++;
         console.log(i)
         var x = $("#inp");
@@ -24,10 +25,14 @@ $("document").ready(function() {
             var e12 = `#sp${e11}`
             if (newed == ed) {
                 $(e12).html($(`#inp${e11}`).val())
+                $(`#inp${e11}`).val("")
+
+            } else {
+                $(`#inp${e11}`).val($(e12).html())
+                console.log(e12)
             }
-            $(`#inp${e11}`).val($(e12).html())
-            console.log(e12)
             newed = ed
+
         })
         $(".del").click(function() {
             // $("#Incomplete").remove(li);
