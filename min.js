@@ -63,7 +63,6 @@ $("document").ready(function() {
                 $(`#Completed #lis${j}`).appendTo('#Incomplete');
             }
         })
-
     });
 
 });
