@@ -14,6 +14,7 @@ $("document").ready(function() {
         var y1 = y.html() + `<li id=lis${i}>` + z + `<span id="sp${i}">` + x.val() + "</span>" + y2 + "</li>";
         // console.log(y1)
         y.html(y1);
+        x.val("");
         $(".edit").click(function() {
             // c++;
             // console.log(c)
