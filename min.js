@@ -26,12 +26,14 @@ $("document").ready(function() {
             if (newed == ed) {
                 $(e12).html($(`#inp${e11}`).val())
                 $(`#inp${e11}`).val("")
+                newed = "xyz"
 
             } else {
                 $(`#inp${e11}`).val($(e12).html())
                 console.log(e12)
+                newed = ed
             }
-            newed = ed
+
 
         })
         $(".del").click(function() {
